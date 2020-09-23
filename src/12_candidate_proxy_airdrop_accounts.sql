@@ -7,6 +7,9 @@ CREATE TABLE candidate_proxy_airdrop_accounts AS (
       FROM `bigquery-public-data.crypto_ethereum.traces` 
     UNION DISTINCT
     SELECT DISTINCT to_address AS address, transaction_hash
+      FROM `bigquery-public-data.crypto_ethereum.traces`
+    UNION DISTINCT
+    SELECT DISTINCT to_address AS address, transaction_hash
       FROM `bigquery-public-data.crypto_ethereum.token_transfers`
   ) AS all_call_sources_and_token_transfer_recipients
   WHERE all_call_sources_and_token_transfer_recipients.transaction_hash IN (
