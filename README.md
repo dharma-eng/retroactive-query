@@ -4,8 +4,8 @@
 
 This repository contains queries that produce the tables of retroactive UNI token distributions. It also contains a query to produce the set of all "proxy" accounts that were not included in the initial UNI token distribution.
 
-The queries run in [Google BigQuery](https://cloud.google.com/bigquery) against the 
-[`bigquery-public-data.crypto_ethereum`](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=crypto_ethereum&page=dataset) 
+The queries run in [Google BigQuery](https://cloud.google.com/bigquery) against the
+[`bigquery-public-data.crypto_ethereum`](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=crypto_ethereum&page=dataset)
 dataset.
 
 Data for this dataset is extracted to Google BigQuery using
@@ -35,7 +35,7 @@ All queries have a cutoff timestamp of `2020-09-01 00:00:00+00 GMT`. Total distr
 
 - every address that burns any SOCKS
 - every address that holds at least 1 SOCKS token
- 
+
 ## Reproduction
 
 You can reproduce the results of this query by forking this repository and adding your own secrets to run in your own GCP account.
