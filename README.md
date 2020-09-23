@@ -35,7 +35,7 @@ All queries have a cutoff timestamp of `2020-09-01 00:00:00+00 GMT`. Total distr
 
 - every address that burns any SOCKS
 - every address that holds at least 1 SOCKS token
- 
+
 ## Reproduction
 
 You can reproduce the results of this query by forking this repository and adding your own secrets to run in your own GCP account.
